@@ -1,0 +1,40 @@
+*{box-sizing: border-box;}
+body{
+    height: 100vh;
+    margin: 0;  
+    font-family: "Segoe UI";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+ 
+
+}
+
+
+#box
+{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+h1::after, h1::before, #span::before, #span::after
+{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: blueviolet;
+    display: inline-block;
+    margin: 5px;
+    margin: 5px;
+}
+
+h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
