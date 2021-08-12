@@ -14,13 +14,13 @@ const app=new Vue
 })
 
 
-function add()
+function add(e)
 {
-    this.style.color="red"
+    e.style.color="red"
 }
-function add2()
+function add2(e)
 {
-    this.style.color="black"
+    e.style.color="blue"
 }
 
 
