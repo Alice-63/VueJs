@@ -1,27 +1,37 @@
+Vue.component("test3",{
+    template:"<button class='btn btn-info' @click='zahl++'> Klick :{{zahl}}</button>",
+    data:function(){
+        return{zahl:0}
+    }
 
+})
 
 
 const app=new Vue
 ({
     el:"#app",
-  data:
+  components:
   {
-   name:"",
-   
-  }
-     
+      test:
+      {
+          template:"<button class='btn btn-primary' > Klick </button>",
+          data:function() {
+              return {zahl:0}
+          }
+      },
+      test2:
+      {
+          template:"<button class='btn btn-warning' > Klick:{{zahl}}</button>"
+          ,data:function() {
+            return {zahl:0}
+        }
+        },
+    
+  },
 
 })
 
 
-function add(e)
-{
-    e.style.color="red"
-}
-function add2(e)
-{
-    e.style.color="blue"
-}
 
 
 

@@ -15,13 +15,24 @@ body{
 
 .box
 {
-    width: 200px;
-    height: 200px;
+    width: 1200px;
+    
     background-color: red;
     margin-bottom: 5px;
 }
 
-.blue
+#app
 {
-    color: blue;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width:800px)
+{
+    .box{width: 650px;}
+}
+@media (max-width:500px)
+{
+    .box{width: 350px;}
 }
