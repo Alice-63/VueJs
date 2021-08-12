@@ -6,7 +6,15 @@ const app=new Vue
     el:"#app",
   data:
   {
-   name:""
+   name:"",
+   red:"background-color:red"
+  },
+  methods:
+  {
+      add()
+      {
+          console.log("Hallo")
+      }
   }
 
 })
