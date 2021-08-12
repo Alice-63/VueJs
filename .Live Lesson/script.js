@@ -7,19 +7,21 @@ const app=new Vue
   data:
   {
    name:"",
-   red:"background-color:red"
-  },
-  methods:
-  {
-      add()
-      {
-          console.log("Hallo")
-      }
+   
   }
+     
 
 })
 
 
+function add()
+{
+    this.style.color="red"
+}
+function add2()
+{
+    this.style.color="black"
+}
 
 
 
