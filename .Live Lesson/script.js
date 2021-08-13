@@ -1,53 +1,20 @@
 
+function add(was)
+{
+    was["km"]=0;
+    was["sy"]="Veli";
+    was["ad"]="Adam"
+    return was
+}
 
+let ary=
+{
+    ad:"Ali",
+    sy:"Cetin",
+    km:37
+}
 
-
-const app= new Vue({
-    el:"#app",
-    data:
-    {
-        text:
-        [
-            
-            {
-                name:"Ali",
-                surname:"Cetindag",
-                age:37,
-            },
-            {
-                name:"Mustafa",
-                surname:"Cetindag",
-                age:12,
-            },
-            {
-                name:"Zeynep",
-                surname:"Cetindag",
-                age:8,
-            },
-            
-            {
-                name:"Meryem",
-                surname:"Cetindag",
-                age:37,
-            },
-            {
-                name:"Hatice",
-                surname:"Cetindag",
-                age:12,
-            },
-            {
-                name:"Zeynep",
-                surname:"Cetindag",
-                age:8,
-            },
-        ]
-    }
-})
-
-
-
-
-
+console.log(ary) 
 
 
 
