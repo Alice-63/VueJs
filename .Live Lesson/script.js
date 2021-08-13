@@ -1,60 +1,33 @@
-Vue.component("test",{template:"<button> Ali</button>"})
+Vue.component("test",{
+    template:"<input type='text' :placeholder='num' @mouseout='num++'>",
+    data:function(){
+        return {num:0}
+    }
+})
 
 
 
-// const app= new Vue({
-//     el:"#app",
-//     data:
-//     {
+const app= new Vue({
+    el:"#app",
+    data:
+    {
 
-//     },
-//     components:
-//     {
-//         test1:
-//         {
-//             template:"<button>Test2</button>"
-//         }
-//     }
-// })
-
-
+    },
+    components:
+    {
+       test2:
+       {
+           template:"<button>Tikla</button>"
+       }
+    }
+})
 
 
 
 
 
-// Vue.component("test3",{
-//     template:"<button class='btn btn-info' @click='zahl++'> Klick :{{zahl}}</button>",
-//     data:function(){
-//         return{zahl:0}
-//     }
-
-// })
 
 
-// const app=new Vue
-// ({
-//     el:"#app",
-//   components:
-//   {
-//       test:
-//       {
-//           template:"<button class='btn btn-primary' > Klick </button>",
-//           data:function() {
-//               return {zahl:0}
-//           }
-//       },
-//       test2:
-//       {
-//           template:"<button class='btn btn-warning' > Klick:{{zahl}}</button>"
-//           ,data:function() {
-//             return {zahl:0}
-//         }
-//         },
-    
-//   },
-
-// })
 
 
 
