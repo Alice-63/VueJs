@@ -1,20 +1,22 @@
 
-function add(was)
+Vue.component("hallo",
 {
-    was["km"]=0;
-    was["sy"]="Veli";
-    was["ad"]="Adam"
-    return was
-}
+    template:"<button> Click </button>"
+})
 
-let ary=
-{
-    ad:"Ali",
-    sy:"Cetin",
-    km:37
-}
+const app=new Vue({
+    el:"#app",
+    data:{
 
-console.log(ary) 
+    },
+    components:
+    {
+        hallo1:
+        {
+            template:"<button> Click </button>"
+        }
+    }
+})
 
 
 
