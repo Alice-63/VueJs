@@ -1,9 +1,4 @@
-Vue.component("test",{
-    template:"<input type='text' :placeholder='num' @mouseout='num++'>",
-    data:function(){
-        return {num:0}
-    }
-})
+
 
 
 
@@ -12,13 +7,6 @@ const app= new Vue({
     data:
     {
 
-    },
-    components:
-    {
-       test2:
-       {
-           template:"<button>Tikla</button>"
-       }
     }
 })
 
