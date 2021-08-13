@@ -13,7 +13,7 @@ const app=new Vue({
     {
         hallo1:
         {
-            template:"<button> Click </button>"
+            template:"<button style='color:blue'> Click </button>"
         }
     }
 })
