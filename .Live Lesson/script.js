@@ -1,16 +1,6 @@
 
 
-Vue.component("hallo",
-{
-    template:"<button @click='add()'> Click {{number}}</button",
-    data:function()
-    {
-        add()
-        {
-            return {number:1}
-        }
-    }
-})
+
 
 
 
@@ -18,16 +8,14 @@ const app= new Vue({
     el:"#app",
     data:
     {
-
-    },
-    components:
-    {
-        hallo1:
+        test:
         {
-            template:"<button> Click Me</button"
+            isim:"Ali",
+            soyad:"Cetindag",
+            age:37
         }
-    }
-
+    },
+   
 
 
 })
