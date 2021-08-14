@@ -1,6 +1,16 @@
 
 
-Vue.component("hallo",{template:"<button> Click</button"})
+Vue.component("hallo",
+{
+    template:"<button @click='add()'> Click {{number}}</button",
+    data:function()
+    {
+        add()
+        {
+            return {number:1}
+        }
+    }
+})
 
 
 
