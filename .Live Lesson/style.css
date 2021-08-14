@@ -1,33 +1,38 @@
 *{box-sizing: border-box;}
 body{
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;  
     font-family: "Segoe UI";
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    color: white;
- 
-
 }
 
 
 .box
 {
-    width: 1200px;
-    
-    background-color: blueviolet;
-    margin-bottom: 5px;
+
+    margin: 15px;
+    padding: 25px;
+    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.20);
 }
 
 #app
 {
-    width: 100%;
+    width: 1000px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    
 }
 
 @media (max-width:800px)
