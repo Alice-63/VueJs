@@ -1,6 +1,6 @@
 
 Vue.component("test",{
-    template:"<button>Ali</button"
+    template:"<button>Ali</button>"
 })
 
 
