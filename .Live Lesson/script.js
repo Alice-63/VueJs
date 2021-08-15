@@ -18,8 +18,13 @@ const app= new Vue({
     {
         test1:
         {
-            template:"<button>Mustafa</button>"
+            template:"<button @click='x++'>Mustafa: {{x}}</button>",
+            data:function()
+        {
+            return{x:1}
         }
+        },
+        
     }
 })
 
