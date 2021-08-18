@@ -1,40 +1,32 @@
+Vue.directive("blau",{
 
-Vue.component("test",{
-    template:"<button>Ali</button>"
-})
-
-
-
-
-const app= new Vue({
-
-
-    el:"#app",
-    data:
+    inserted:function(el)
     {
-
-    },
-    components:
-    {
-        test1:
-        {
-            template:"<button @click='x++'>Mustafa: {{x}}</button>",
-            data:function()
-        {
-            return{x:1}
-        }
-        },
-        
+        el.innerHTML="red"
     }
+
 })
 
+const app=new Vue
+(
+    {
+    el:"#app"    
+    }
+
+)
+
+const benutzer=
+[
+    {name:"ALi",surname:"Cetin",age:37},
+    {name:"Mustafa",surname:"Cetin",age:12},
+    {name:"Zeynep",surname:"Cetin",age:8}
+]
 
 
 
-
-
-
-
+const alle=benutzer.map(function(b)
+{return benutzer.name})
+console.log(alle)
 
 
 
