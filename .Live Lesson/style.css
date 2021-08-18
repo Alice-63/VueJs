@@ -34,12 +34,3 @@ body{
     flex-wrap: wrap;
     
 }
-
-@media (max-width:800px)
-{
-    .box{width: 650px;}
-}
-@media (max-width:500px)
-{
-    .box{width: 350px;}
-}
