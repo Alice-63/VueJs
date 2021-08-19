@@ -1,0 +1,36 @@
+*{box-sizing: border-box;}
+body{
+    /* height: 100vh; */
+    margin: 0;  
+    font-family: "Segoe UI";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+#app
+{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.streng
+{
+    width: 98%;
+    height: 2px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    display: none
+}

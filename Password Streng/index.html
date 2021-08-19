@@ -20,7 +20,14 @@
 <body id="body" class="bg-dark text-white mt-5">
 
 
- 
+  <div id="app">
+    <div class="container d-flex flex-column justify-center w-50">
+      <input type="text" class="mb-2 rounded border-none" >
+      <input type="password" @click="check" class=" rounded" v-model="password" >
+     <div class="box"> <div class="streng"></div></div>
+      <button class="btn btn-warning mt-2" >Login</button>
+    </div>
+  </div>
 
 <!-- js bereich -->
     <script src="script.js"></script>
