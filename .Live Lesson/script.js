@@ -12,7 +12,23 @@ const app= new Vue({
     {
         check: function()
         {
-            console.log(this.password)
+           if(this.password.match(/[a-z]/))
+           {
+                console.log("Kücük Harf")
+           }
+           if(this.password.match(/[A-Z]/))
+           {
+            console.log("Büyük Harf")
+           }
+
+           if(this.password.match(/[0-9]/))
+           {
+            console.log("Sayi")
+           }
+           if(this.password.match(/[a-z]/))
+           {
+
+           }
         }
     }
 })
