@@ -18,8 +18,11 @@ const app= new Vue
             }
         }
     }
-)
 
+    
+)
+app.name="Mustafa";
+app.age="12"
 
 
 
