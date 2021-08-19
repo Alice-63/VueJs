@@ -1,10 +1,9 @@
-Vue.directive("blau",{
-
+Vue.directive("focus",
+{
     inserted:function(el)
     {
-        el.innerHTML="red"
+        el.focus()
     }
-
 })
 
 const app=new Vue
