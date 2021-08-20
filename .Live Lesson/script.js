@@ -45,21 +45,21 @@ const daten=
 ]
 
 
-const app= new Vue({
+// const app= new Vue({
 
-    el:"#app",
-    data:
-    {
-        d:daten
-    },
-    methods:
-    {
-        kurz:  function(str)
-        {
-            return str.substr(0,20)+ "..."
-        }
-    }
-})
+//     el:"#app",
+//     data:
+//     {
+//         d:daten
+//     },
+//     methods:
+//     {
+//         kurz:  function(str)
+//         {
+//             return str.substr(0,20)+ "..."
+//         }
+//     }
+// })
 
 
 
