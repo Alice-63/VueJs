@@ -19,24 +19,15 @@
 
 <body id="body" class="bg-dark text-white mt-5">
 <div class="container">
-  <div id="app" v-test>
+  <div id="app" >
+    <span v-test>test</span>
     <div class="kategorien">
       <button class="btn btn-primary active fw-bold">Alle</button>
       <button class="btn btn-primary fw-bold">Magazin</button>
       <button class="btn btn-primary fw-bold">Sport</button>
       <button class="btn btn-primary fw-bold">Finanzen</button>
     </div>
-    <div class="posts d-flex  flex-wrap   justify-content-between w-90 " >
-  
-        <div class="card bg-warning text-primary  w-25 mr-5 my-1 box-shadow" >
-          <img src="1.png" alt="" class="card-img-top">
-          <div class="card-body">
-           <h5 class="card-title">{{x.titel}}</h5>
-           <p class="card-text">{{kurz(x.text)}}</p>
-             <p class="card-link">{{x.link}}</p>
-          </div>
-        </div>
-
+ 
        
           
             
