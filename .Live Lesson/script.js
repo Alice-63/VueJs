@@ -8,6 +8,6 @@ Vue.directive("test",
 
 
 const app= new Vue({
-    // el:"#app",
-    // data:{}
+    el:"#app",
+    data:{}
 })
