@@ -76,11 +76,9 @@ const teil=teilnehmer.filter(function(x)
 
 function mat(){
 
-    if(bolumler.id==0)
+    if(teilnehmer.bolum==0)
     {
-        teilnehmer.filter(function(x){
-            return x.puan
-        })
+       return
     }
 }
 
