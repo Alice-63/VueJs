@@ -36,9 +36,6 @@ const filterr=arr.filter(function(v){
     return v.name="Ali"
 })
 
-const arrB=[100,12,15,1]
-const sonuc=arrB.reduce(function(x,y)
-{
-    return x-y
-})
+const arrB=["Ali","Veli","mustafa"]
+const sonuc=arrB.join()
 console.log(sonuc)
