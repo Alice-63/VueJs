@@ -97,10 +97,34 @@ const app= new Vue({
                    }
                }
                return teilnehmer[kim].ad+" "+enY
+           },
+           mat:function()
+           {
+              let yeniListe=teilnehmer.filter(function(x){
+
+                if(x.bolum==0)
+                {
+                   return true
+                }
+                return false
+              })
+               
+              let enY=0;
+              let kim =-1
+              for(t of yeniListe)
+              {
+                  if(t.puan>enY)
+                  {
+                      enY=t.puan;
+                      kim=t.id
+                  }
+              }
+              return yeniListe[kim].ad+" "+enY
+               
            }
         }
 
 
 })
 
-
+console.log(x)
