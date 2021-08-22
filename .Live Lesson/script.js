@@ -11,11 +11,15 @@ const app=  new Vue({
     {
         add:function()
         {
-            this.sayi+this.sayi2
+           return Math.round(Math.random()*100);
+         
         }
     },
     computed:
     {
-
+       add2:function()
+       {
+        return Math.round(Math.random()*100)
+       }
     }
 })
