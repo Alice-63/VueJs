@@ -68,31 +68,39 @@ const bolumler =
 ]
 
 
-const teil=teilnehmer.filter(function(x)
-{
-    
-    return x.puan>=100
-})
-
-function mat(){
-
-    if(teilnehmer.bolum==0)
-    {
-       return
-    }
-}
-
-
 
 const app= new Vue({
 
-el:"#app",
-data:
-    {
-        dat: teil
-    }
+    el:"#app",
+    data:
+        {
+            
+            
+        },
+
+        methods:
+        {
+
+        },
+        computed:
+        {
+           enYuksek:function()
+           {
+               let enY=0;
+               let kim =-1
+               for(t of teilnehmer)
+               {
+                   if(t.puan>enY)
+                   {
+                       enY=t.puan;
+                       kim=t.id
+                   }
+               }
+               return teilnehmer[kim].ad+" "+enY
+           }
+        }
 
 
 })
 
-console.log(mat())
+
