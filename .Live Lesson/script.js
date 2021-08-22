@@ -32,9 +32,8 @@ const arr=
     }
 ]
 
-const filterr=arr.filter(v)
-{
-    return v.age>=18
-}
+const filterr=arr.filter(function(v){
+    return v.name="Ali"
+})
 
 console.log(filterr)
