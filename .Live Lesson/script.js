@@ -66,9 +66,16 @@ const bolumler =
         isim: "Spor"
     }
 ]
+const yeniListe=teilnehmer.filter(function(x){
 
+    if(x.bolum==0)
+    {
+       return true
+    }
+    return false
+  })
 
-
+console.log(yeniListe)
 const app= new Vue({
 
     el:"#app",
@@ -100,14 +107,7 @@ const app= new Vue({
            },
            mat:function()
            {
-              let yeniListe=teilnehmer.filter(function(x){
-
-                if(x.bolum==0)
-                {
-                   return true
-                }
-                return false
-              })
+              
                
               let enY=0;
               let kim =-1
@@ -119,7 +119,7 @@ const app= new Vue({
                       kim=t.id
                   }
               }
-              return yeniListe[kim].ad+" "+enY
+              return Math.max(yeniListe.puan)
                
            }
         }
@@ -127,4 +127,4 @@ const app= new Vue({
 
 })
 
-console.log(x)
+console.log()
