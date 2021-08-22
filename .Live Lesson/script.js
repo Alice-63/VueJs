@@ -9,7 +9,18 @@ Vue.directive("test",
 
 const app= new Vue({
     el:"#app",
-    data:{}
+    data:
+    {
+        isim:"Ali",
+        Soyisim:"Cetindag"
+    },
+    computed:
+    {
+        fullName:function()
+        {
+            return this.isim+" "+this.Soyisim
+        }
+    }
 })
 
 
