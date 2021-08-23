@@ -3,7 +3,7 @@ new Vue({
     el:"#app",
     data:
     {
-        changeTitel:""
+        changeTitel:"This is a titel"
     },
    
     
