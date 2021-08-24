@@ -5,6 +5,13 @@ new Vue({
     {
         changeTitel:""
     },
+    methods:
+    {
+        hello:function ()
+        {
+            return "Merhaba Ali Cetindag"
+        }
+    }
    
     
 })
