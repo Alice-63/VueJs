@@ -3,7 +3,7 @@ new Vue({
     el:"#app",
     data:
     {
-        changeTitel:"",
+        changeTitel:"Ali",
         message:"Ali Cetindag",
         link:"http://www.google.com",
         box:"background-color:red"
@@ -12,7 +12,8 @@ new Vue({
     {
         hello:function ()
         {
-            return "Merhaba "+ this.changeTitel+ this.message
+            return this.changeTitel="ALi degisti"
+            
         }
     }
    
