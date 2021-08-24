@@ -9,7 +9,7 @@ new Vue({
     {
         hello:function ()
         {
-            return "Merhaba"+ this.titel
+            return "Merhaba"+ this.changeTitel
         }
     }
    
