@@ -21,14 +21,19 @@
 <div class="container">
   <div id="app" >
    
-    <h1 v-once >{{changeTitel}}</h1>
-    <input v-once type="text" v-model="changeTitel" placeholder="Edit me">
-    <h1 >{{changeTitel}}</h1>
-    <h1 >{{changeTitel}}</h1>
-    <h1 :style="box">{{hello()}}</h1>
-    <a :href="link">Hallo</a>
-    <input type="text" :placeholder="changeTitel">
-      <p v-html="blogLink"></p>    
+   1.
+   <p>{{name}} - {{age}}</p>
+   2.
+<p>{{age5()}}</p>
+3.
+<p>{{rastgele()}}</p>
+4.
+<img :src="foto" alt="" style="width: 200px;">
+<br><br>
+
+5.
+<input type="text" :value="name">
+
             
       </div>
     </div>
@@ -39,6 +44,28 @@
 
 <!-- js bereich -->
     <script src="script.js"></script>
+    <script>
+      new Vue({
+        el:"#app",
+        data:
+        { 
+          name:"ALi",
+          age:37,
+          foto:"https://lernen.zoner.de/wp-content/uploads/2018/08/fin.jpg?fidl=2019-06-mag-de"
+        },
+        methods:
+        {
+          age5:function()
+          {
+            return this.age*5
+          },
+          rastgele:function()
+          {
+            return Math.random()
+          }
+        }
+      })
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
