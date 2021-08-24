@@ -21,12 +21,12 @@
 <div class="container">
   <div id="app" >
    
-    <button @click="alert">Tikla</button>
+    <button @click="alert('Ali')">Tikla</button>
     
     <p>{{count}}</p>
     <button @click="count++">Plus</button>
     <button @click="count--">Minus</button>
-    <p @mousemove="move">Kordinatlar:{{x}}-{{y}}</p>
+    <p @mousemove="move(2,$event)">Kordinatlar:{{x}}-{{y}}</p>
 
             
       </div>
@@ -49,12 +49,13 @@
         },
         methods:
         {
-         alert:function()
+         alert:function(name)
          {
-           return alert()
+           return alert(name+" Cetindag")
          },
-         move:function(event)
+         move:function(country,event)
          {
+           this.count+=country
            this.x=event.clientX;
            this.y=event.clientY
          }
