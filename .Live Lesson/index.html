@@ -26,6 +26,7 @@
     <p>{{count}}</p>
     <button @click="count++">Plus</button>
     <button @click="count--">Minus</button>
+    <p @mousemove="move">Kordinatlar:{{x}}-{{y}}</p>
 
             
       </div>
@@ -42,13 +43,20 @@
         el:"#app",
         data:
         { 
-          count:0
+          count:0,
+          x:0,
+          y:0
         },
         methods:
         {
          alert:function()
          {
            return alert()
+         },
+         move:function(event)
+         {
+           this.x=event.clientX;
+           this.y=event.clientY
          }
        
         }
