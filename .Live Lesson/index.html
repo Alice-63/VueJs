@@ -32,7 +32,7 @@
 <br><br>
 
 5.
-<input type="text" v-model="name">
+<input type="text" :input="newName">
 
             
       </div>
@@ -64,8 +64,8 @@
           {
             return Math.random()*10
           },
-          newName:function(a){
-            return this.name=a.target.value
+          newName:function(event){
+            return this.name=event.target.value
           }
         }
       })
