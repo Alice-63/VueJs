@@ -32,7 +32,7 @@
 <br><br>
 
 5.
-<input type="text" :value="name">
+<input type="text" v-model="name">
 
             
       </div>
@@ -51,7 +51,8 @@
         { 
           name:"ALi",
           age:37,
-          foto:"https://lernen.zoner.de/wp-content/uploads/2018/08/fin.jpg?fidl=2019-06-mag-de"
+          foto:"https://lernen.zoner.de/wp-content/uploads/2018/08/fin.jpg?fidl=2019-06-mag-de",
+    
         },
         methods:
         {
@@ -63,6 +64,7 @@
           {
             return Math.random()
           }
+       
         }
       })
     </script>
