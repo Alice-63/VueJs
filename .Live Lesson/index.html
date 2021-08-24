@@ -21,18 +21,11 @@
 <div class="container">
   <div id="app" >
    
-   1.
-   <p>{{name}} - {{age}}</p>
-   2.
-<p>{{age5()}}</p>
-3.
-<p>{{rastgele()}}</p>
-4.
-<img :src="foto" alt="" style="width: 200px;">
-<br><br>
-
-5.
-<input type="text" :input="newName">
+    <button @click="alert">Tikla</button>
+    
+    <p>{{count}}</p>
+    <button @click="count++">Plus</button>
+    <button @click="count--">Minus</button>
 
             
       </div>
@@ -49,24 +42,15 @@
         el:"#app",
         data:
         { 
-          name:"ALi",
-          age:37,
-          foto:"https://lernen.zoner.de/wp-content/uploads/2018/08/fin.jpg?fidl=2019-06-mag-de",
-    
+          count:0
         },
         methods:
         {
-          age5:function()
-          {
-            return this.age*5
-          },
-          rastgele:function()
-          {
-            return Math.random()*10
-          },
-          newName:function(event){
-            return this.name=event.target.value
-          }
+         alert:function()
+         {
+           return alert()
+         }
+       
         }
       })
     </script>
