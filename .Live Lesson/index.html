@@ -26,7 +26,10 @@
     <p>{{count}}</p>
     <button @click="count++">Plus</button>
     <button @click="count--">Minus</button>
-    <p @mousemove="move(2,$event)">Kordinatlar:{{x}}-{{y}}</p>
+    <p @mousemove="move(2,$event)">Kordinatlar:{{x}}-{{y}}#
+
+      <span v-on:mousemove.stop>Gizli Bölme</span>
+    </p>
 
             
       </div>
