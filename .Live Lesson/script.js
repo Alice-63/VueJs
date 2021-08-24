@@ -5,7 +5,8 @@ new Vue({
     {
         changeTitel:"",
         message:"Ali Cetindag",
-        link:"http://www.google.com"
+        link:"http://www.google.com",
+        box:"background-color:red"
     },
     methods:
     {
