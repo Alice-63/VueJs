@@ -3,13 +3,14 @@ new Vue({
     el:"#app",
     data:
     {
-        changeTitel:""
+        changeTitel:"",
+        message:"Ali Cetindag"
     },
     methods:
     {
         hello:function ()
         {
-            return "Merhaba"+ this.changeTitel
+            return "Merhaba"+ this.changeTitel+ this.message
         }
     }
    
