@@ -21,18 +21,15 @@
 <div class="container">
   <div id="app" >
   
-      <button @click="alert('Ali')">Tikla</button>
       
-      <p>{{count}}</p>
-      <button @click="count++">Plus</button>
-      <button @click="count--">Minus</button>
-      <p>{{count*2}}</p>
-      <p>{{count>10 ? "Count 10'dan Büyüktür":"Count 10'dan Kücütür"}}</p>
-      <p @mousemove="move(2,$event)">Kordinatlar:{{x}}-{{y}}#
-
-        <span v-on:mousemove.stop>Gizli Bölme</span>
-      </p>
-      <input type="text" v-on:keyup.enter.space="alert2">
+      
+      <p>{{sayi}} | {{second}}</p>
+      <button @click="sayi++">Plus</button>
+      <button @click="second++">second</button>
+      
+      <p>{{meth()}}</p>
+      <p>{{comp}}</p>
+      
 
             
     </div>
@@ -50,32 +47,26 @@
         el:"#app",
         data:
         { 
-          count:0,
-          x:0,
-          y:0
+          sayi:0,
+          second:0
+         
         },
         methods:
         { 
-         alert:function(name)
+        
+         meth:function()
          {
-           return alert(name+" Cetindag")
-         },
-         move:function(country,event)
-         {
-           this.count+=country
-           this.x=event.clientX;
-           this.y=event.clientY
-         },
-         alert2:function(a)
-         {
-           alert(a.target.value)
-           return a.target.value=""
+          console.log("Methods calisti")
+            return this.sayi>10 ? "Count 10'dan Büyüktür":"Count 10'dan Kücütür"
          }
        
         },
-        compurted:
+        computed:
         {
-
+          comp:function(){
+            console.log("Computed calisti")
+            return this.second>10 ? "Count 10'dan Büyüktür":"Count 10'dan Kücütür"
+          }
         }
       })
       
