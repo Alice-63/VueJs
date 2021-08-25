@@ -26,6 +26,8 @@
       <p>{{count}}</p>
       <button @click="count++">Plus</button>
       <button @click="count--">Minus</button>
+      <p>{{count*2}}</p>
+      <p>{{count>10 ? "Count 10'dan Büyüktür":"Count 10'dan Kücütür"}}</p>
       <p @mousemove="move(2,$event)">Kordinatlar:{{x}}-{{y}}#
 
         <span v-on:mousemove.stop>Gizli Bölme</span>
