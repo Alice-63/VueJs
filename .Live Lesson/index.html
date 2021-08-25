@@ -20,21 +20,32 @@
 <body id="body" class="">
 <div class="container">
   <div id="app" >
-   
-    <button @click="alert('Ali')">Tikla</button>
-    
-    <p>{{count}}</p>
-    <button @click="count++">Plus</button>
-    <button @click="count--">Minus</button>
-    <p @mousemove="move(2,$event)">Kordinatlar:{{x}}-{{y}}#
+  
+      <button @click="alert('Ali')">Tikla</button>
+      
+      <p>{{count}}</p>
+      <button @click="count++">Plus</button>
+      <button @click="count--">Minus</button>
+      <p @mousemove="move(2,$event)">Kordinatlar:{{x}}-{{y}}#
 
-      <span v-on:mousemove.stop>Gizli Bölme</span>
-    </p>
-    <input type="text" v-on:keyup.enter="alert2">
+        <span v-on:mousemove.stop>Gizli Bölme</span>
+      </p>
+      <input type="text" v-on:keyup.enter.space="alert2">
 
             
+    </div>
+    <div id="app2">
+      1.
+      <div>
+        <button v-on:click="alert">Alert Göster</button>
+      </div>
+      2.
+      <div>
+        <input type="text" v-on:keydown="yaz">
+        <p>{{value}}</p>
       </div>
     </div>
+</div>
   </div>
 
 
@@ -63,13 +74,35 @@
            this.x=event.clientX;
            this.y=event.clientY
          },
-         alert2:function(event)
+         alert2:function(a)
          {
-           alert(event.target.value)
-           return event.target.value=""
+           alert(a.target.value)
+           return a.target.value=""
          }
        
         }
+      })
+      // ---
+      new Vue({
+        el:"#app2",
+        data:
+        {
+          value:""
+        },
+        methods:
+        {
+          alert:function()
+          {
+            alert()
+          }
+        },
+        yaz:function(event)
+        {
+          this.value=event.target.value
+        }
+
+
+
       })
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
