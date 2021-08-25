@@ -44,6 +44,13 @@
         <input type="text" v-on:keydown="yaz">
         <p>{{value}}</p>
       </div>
+
+      3.
+      <div>
+        <input type="text" v-on:keydown.enter="yaz">
+        <p>{{value}}</p>
+      </div>
+
     </div>
 </div>
   </div>
@@ -94,12 +101,14 @@
           alert:function()
           {
             alert()
-          }
-        },
-        yaz:function(event)
-        {
-          this.value=event.target.value
+          },
+          yaz:function(event)
+          {
+            this.value=event.target.value
+          },
+
         }
+       
 
 
 
