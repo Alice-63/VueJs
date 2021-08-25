@@ -36,24 +36,7 @@
 
             
     </div>
-    <div id="app2">
-      1.
-      <div>
-        <button v-on:click="alert">Alert Göster</button>
-      </div>
-      2.
-      <div>
-        <input type="text" v-on:keydown="yaz">
-        <p>{{value}}</p>
-      </div>
-
-      3.
-      <div>
-        <input type="text" v-on:keydown.enter="yaz">
-        <p>{{value}}</p>
-      </div>
-
-    </div>
+   
 </div>
   </div>
 
@@ -72,7 +55,7 @@
           y:0
         },
         methods:
-        {
+        { 
          alert:function(name)
          {
            return alert(name+" Cetindag")
@@ -89,32 +72,13 @@
            return a.target.value=""
          }
        
-        }
-      })
-      // ---
-      new Vue({
-        el:"#app2",
-        data:
-        {
-          value:""
         },
-        methods:
+        compurted:
         {
-          alert:function()
-          {
-            alert()
-          },
-          yaz:function(event)
-          {
-            this.value=event.target.value
-          },
 
         }
-       
-
-
-
       })
+      
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
