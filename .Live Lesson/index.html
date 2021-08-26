@@ -20,14 +20,11 @@
 <body id="body" class="">
 <div class="container">
   <div id="app" >
+  <div 
+  :class="{yellow:attachedClass}"
+  class="box"></div>
   <div class="box"></div>
   <div class="box"></div>
-  <div class="box"></div>
-
-      
-     
-      
-      
 
             
     </div>
@@ -44,7 +41,7 @@
         el:"#app",
         data:
         { 
-         
+          attachedClass:false
          
         },
        
