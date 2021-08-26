@@ -22,27 +22,14 @@
   <div id="app" >
   
       
-      
-      <p>{{sayi}} | {{second}}</p>
-      <button @click="sayi++">Plus</button>
-      <button @click="second++">second</button>
-      
-      <p>{{meth()}} || {{comp}} </p>
+     
       
       
 
             
     </div>
 
-    <!--  -->
-<div id="app2">
-  <p>Su an ki deger: {{value}}</p>
-  <button @click="value+=5">Add 5</button>
-  <button @click="value+=2">Add2</button>
-  <p>{{result}}</p>
-</div>   
-</div>
-  </div>
+  
 
 
 
@@ -54,66 +41,14 @@
         el:"#app",
         data:
         { 
-          sayi:0,
-          second:0
+         
          
         },
-        methods:
-        { 
-        
-         meth:function()
-         {
-          console.log("Methods calisti")
-            return this.sayi>10 ? "Count 10'dan Büyüktür":"Count 10'dan Kücütür"
-         }
        
-        },
-        computed:
-        {
-          comp:function(){
-            console.log("Computed calisti")
-            return this.second>10 ? "Count 10'dan Büyüktür":"Count 10'dan Kücütür"
-          }
-        },
-        watch:
-        {
-          second:function()
-          {
-            vm=this
-            setTimeout(function(){vm.second=0},1500)
-          }
-        }
       })
       // 
-      new Vue({
-        el:"#app2",
-        data:
-        {
-          value:0
-        },
-        computed:
-        {
-          result:function()
-          {
-            return this.value>33 ? "Tamamlandi":"Henüz Bitmedi"
-          }
-        },
-        watch:
-        {
-          value:function()
-          {
-            vm=this
-            setTimeout(function()
-            {
-              if(vm.value>=33)
-              {
-                vm.value=0
-              }
-            },5000)
-          }
-        }
-      })
       
+       
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
