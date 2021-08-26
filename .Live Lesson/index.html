@@ -22,10 +22,9 @@
   <div id="app" >
   <div 
   @click="attachedClass=!attachedClass"
-  :class="{yellow:attachedClass}"
+  :class="{divClass}"
   class="box" ></div>
-  <div class="box"  @click="attachedClass=!attachedClass"
-  :class="{yellow:attachedClass}"></div>
+  <div class="box" ></div>
   <div class="box"></div>
 
             
@@ -46,6 +45,16 @@
           attachedClass:false
          
         },
+        computed:
+        {
+          divClass:function()
+          {
+            return
+            {
+              yellow:attachedClass
+            }
+          }
+        }
        
       })
       // 
