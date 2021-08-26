@@ -21,12 +21,13 @@
 <div class="container">
   <div id="app" >
   <div 
-  @click="attachedClass=!attachedClass"
-  :class="[divClass, color]"
+ 
+  
   class="box" ></div>
   <div class="box" ></div>
-  <div class="box" style='background-color:"+color+'></div>
+  <div class="box" :style="costumStyle"></div>
   <input type="text" v-model="color">
+  <input type="text" v-model="height">
 
             
     </div>
@@ -43,17 +44,19 @@
         el:"#app",
         data:
         { 
-          attachedClass:false,
-          color:"green"
+         
+          color:"green",
+          height:100
          
         },
         computed:
         {
-          divClass:function()
+          costumStyle:function()
           {
-            return            {
+            return{
               
-              yellow :this.attachedClass
+              backgroundColor:this.color,
+              height:this.height+"px"
             }
           }
         }
