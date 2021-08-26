@@ -22,10 +22,11 @@
   <div id="app" >
   <div 
   @click="attachedClass=!attachedClass"
-  :class="{divClass}"
+  :class="[divClass, color]"
   class="box" ></div>
   <div class="box" ></div>
-  <div class="box"></div>
+  <div class="box" :style='background-color:"+color+'></div>
+  <input type="text" v-model="color">
 
             
     </div>
@@ -42,16 +43,17 @@
         el:"#app",
         data:
         { 
-          attachedClass:false
+          attachedClass:false,
+          color:"green"
          
         },
         computed:
         {
           divClass:function()
           {
-            return
-            {
-              yellow:attachedClass
+            return            {
+              
+              yellow :this.attachedClass
             }
           }
         }
