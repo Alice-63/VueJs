@@ -21,9 +21,11 @@
 <div class="container">
   <div id="app" >
   <div 
+  @click="attachedClass=!attachedClass"
   :class="{yellow:attachedClass}"
-  class="box"></div>
-  <div class="box"></div>
+  class="box" ></div>
+  <div class="box"  @click="attachedClass=!attachedClass"
+  :class="{yellow:attachedClass}"></div>
   <div class="box"></div>
 
             

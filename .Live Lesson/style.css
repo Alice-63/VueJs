@@ -19,6 +19,7 @@ body{
 .yellow
 {
     background-color: yellow;
+    border: 5px solid blue;
 }
 
 
