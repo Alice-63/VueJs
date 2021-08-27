@@ -1,14 +1,16 @@
 <template>
   <div id="app">
-    <header>
+    <header style="display:flex; justify-content:space-between; align-items:center">
+      <div class="wrapper" style="width:">
       <div>
-        
+        <img src="./assets/logo.png" alt="" style="width:100px">
       </div>
       <div id="nav">
         <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link> |
         <router-link to="/team">Unsere Team</router-link> |
         <router-link to="/kontakt">Kontakt</router-link>
+      </div>
       </div>
     </header>
    <main> 
