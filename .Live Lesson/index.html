@@ -20,18 +20,12 @@
 <body id="body" class="">
 <div class="container">
   <div id="app" >
-  <div 
-  :style="[costumStyle,{width:height+'px'}]"
-  
-  class="box" ></div>
-  <div class="box" :style="[costumStyle,{width:height+'px'}]"></div>
-  <div class="box" :style="costumStyle"></div>
-  <input type="text" v-model="color">
-  <input type="text" v-model="height">
+    
+  </div>
+ 
+ 
 
-            
-    </div>
-    <img src="." alt="">
+         
   
 
 
@@ -40,29 +34,7 @@
 <!-- js bereich -->
     <script src="script.js" type="module"></script>
     <script>
-      new Vue({
-        el:"#app",
-        data:
-        { 
-         
-          color:"green",
-          height:100
-         
-        },
-        computed:
-        {
-          costumStyle:function()
-          {
-            return{
-              
-              backgroundColor:this.color,
-              height:this.height+"px"
-            }
-          }
-        }
-       
-      })
-      // 
+      
       
        
     </script>
