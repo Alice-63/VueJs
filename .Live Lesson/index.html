@@ -23,12 +23,12 @@
 
     <p v-if="show">Beni Görüyormusun</p>
     <p v-else>Beni Görebiliyor musun?</p>
-    <button @click="show=!show">Göster/Gizli</button>
-    
+    <button @click="add()">Göster/Gizli</button>
+    <input type="text" v-model="sayi">
 
-    <p v-if="sayi>10">Sayi 10'dan büyük</p>
-    <p v-else-if="sayi<10">Sayi 10'dan Kücük</p>
-    <p v-else="sayi=10">Sayi 10'a esittir</p>
+    <p v-if="sayi>10">{{sayi}}</p>
+    <p v-else-if="sayi<10">{{sayi}}</p>
+    <p v-else="sayi=10">{{sayi}}</p>
   </div>
  
  
@@ -49,7 +49,14 @@
         data:
         {
           show:true,
-          sayi:11
+          sayi:""
+        },
+        methods:
+        {
+          add:function()
+          {
+            this.sayi=this.sayi*this.sayi            
+          }
         }
       })
        
