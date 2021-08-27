@@ -22,7 +22,7 @@
   <div id="app" >
 
     <p v-if="show">Beni Görüyormusun</p>
-    <p>Beni Görebiliyor musun?</p>
+    <p v-else>Beni Görebiliyor musun?</p>
     <button @click="show=!show">Göster/Gizli</button>
     
   </div>
