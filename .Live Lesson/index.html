@@ -25,6 +25,10 @@
     <p v-else>Beni Görebiliyor musun?</p>
     <button @click="show=!show">Göster/Gizli</button>
     
+
+    <p v-if="sayi>10">Sayi 10'dan büyük</p>
+    <p v-else-if="sayi<10">Sayi 10'dan Kücük</p>
+    <p v-else="sayi=10">Sayi 10'a esittir</p>
   </div>
  
  
@@ -44,7 +48,8 @@
         el:"#app",
         data:
         {
-          show:true
+          show:true,
+          sayi:11
         }
       })
        
