@@ -23,7 +23,7 @@
 
     <p v-if="show">Beni Görüyormusun</p>
     <p>Beni Görebiliyor musun?</p>
-    <button>Göster/Gizli</button>
+    <button @click="show=!show">Göster/Gizli</button>
     
   </div>
  
@@ -44,7 +44,7 @@
         el:"#app",
         data:
         {
-          
+          show:true
         }
       })
        
