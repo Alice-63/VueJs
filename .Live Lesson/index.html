@@ -43,13 +43,17 @@
         <li v-for="(p,i) in products">{{i+" " + p}}</li>
       </ul>
       <hr>
-      <table border="1">
-        <tr>
-        <td v-for="person in persons">{{person.name}}:{{person.email}}:{{person.age}} </td> <br>
-        </tr>
-        <br>
+      <table border="1" >
+        <template v-for="person in persons">
+       <tr v-for="(p,v,i) in person">
+         <th >{{v[i]}}</th>
+       </tr>
+       <tr>
+         <td v-for="(p,v,i) in person">{{p}}</td>
+       </tr>
+      </template>
       </table>
-      <br>
+      
     </div>
   </div>
  
