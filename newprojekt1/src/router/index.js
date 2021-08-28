@@ -27,6 +27,11 @@ const routes = [
     path:'/kontakt',
     name:'Kontakt',
     component:()=> import('../views/kontakt.vue')
+  },
+  {
+    path:"/yeniSayfa",
+    name:"Yeni Sayfa",
+    component:()=>{"../views/yeniSayfa.vue"}
   }
 ]
 

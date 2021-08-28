@@ -9,7 +9,8 @@
         <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link> |
         <router-link to="/team">Unsere Team</router-link> |
-        <router-link to="/kontakt">Kontakt</router-link>
+        <router-link to="/kontakt">Kontakt</router-link> |
+        <router-link to="/yeni-sayfa">Yeni Sayfa</router-link>
       </div>
       </div>
     </header>
@@ -18,7 +19,7 @@
    </main>
    <footer>
      Digitalle Kariere
-     <kontakt2/>
+     
    </footer>
   </div>
 </template>

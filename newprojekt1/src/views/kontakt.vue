@@ -2,6 +2,7 @@
 <div>
      <h1>kontakt</h1>
      <kontakt2/>
+     <kontakt2/>
 </div>
    
 </template>
