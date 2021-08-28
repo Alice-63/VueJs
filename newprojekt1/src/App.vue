@@ -18,6 +18,7 @@
    </main>
    <footer>
      Digitalle Kariere
+     <kontakt2/>
    </footer>
   </div>
 </template>
