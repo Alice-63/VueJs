@@ -40,8 +40,16 @@
     <hr>
     <div>
       <ul>
-        <li v-for="p in products">{{p}}</li>
+        <li v-for="(p,i) in products">{{i+" " + p}}</li>
       </ul>
+      <hr>
+      <table border="1">
+        <tr>
+        <td v-for="person in persons">{{person.name}}:{{person.email}}:{{person.age}} </td> <br>
+        </tr>
+        <br>
+      </table>
+      <br>
     </div>
   </div>
  
