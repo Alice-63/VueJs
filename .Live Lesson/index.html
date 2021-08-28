@@ -36,6 +36,13 @@
       <p v-show="show">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem iusto commodi temporibus, officia animi eius voluptatem nesciunt! Eum dolorem possimus porro. 
         Rem exercitationem facilis corrupti voluptatum, assumenda fuga quaerat tempora.</p>
     </div>
+
+    <hr>
+    <div>
+      <ul>
+        <li v-for="p in products">{{p}}</li>
+      </ul>
+    </div>
   </div>
  
  
@@ -57,7 +64,14 @@
         {
           show:true,
           sayi:"",
-          show:false
+          show:false,
+          products:["Monitör","Klavye","Aski","Masa"],
+          persons:[
+            {name:"Ali", email:"ali@cetin.com", age:37},
+            {name:"Mustafa", email:"Mustafa@cetin.com", age:12},
+            {name:"Zeynep", email:"Zeynep@cetin.com", age:8},
+            {name:"Hatice", email:"Hatice@cetin.com", age:4}
+          ]          
         },
         methods:
         {
