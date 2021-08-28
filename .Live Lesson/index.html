@@ -21,14 +21,21 @@
 <div class="container">
   <div id="app" >
 
-    <!-- <p v-if="show">Beni Görüyormusun</p>
+    <p v-if="show">Beni Görüyormusun</p>
     <p v-else>Beni Görebiliyor musun?</p>
     <button @click="add()">Göster/Gizli</button>
     <input type="text" v-model="sayi">
 
     <p v-if="sayi>10">{{sayi}}</p>
     <p v-else-if="sayi<10">{{sayi}}</p>
-    <p v-else="sayi=10">{{sayi}}</p> -->
+    <p v-else="sayi=10">{{sayi}}</p>
+
+
+    <div class="box2">
+      <button @click="show=!show">Show</button>
+      <p v-show="show">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem iusto commodi temporibus, officia animi eius voluptatem nesciunt! Eum dolorem possimus porro. 
+        Rem exercitationem facilis corrupti voluptatum, assumenda fuga quaerat tempora.</p>
+    </div>
   </div>
  
  
@@ -49,7 +56,8 @@
         data:
         {
           show:true,
-          sayi:""
+          sayi:"",
+          show:false
         },
         methods:
         {
