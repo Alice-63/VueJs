@@ -105,6 +105,7 @@ function check()
     inputPass=document.getElementById("inputPass")
    if( inputName.value=="" & inputPass=="")
    {
-       alert("Bitte füllen Sie alle Felder!")
+       inputName.style.borderBottom="1px solid red;"
+       return
    }
 }
