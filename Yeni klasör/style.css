@@ -145,27 +145,44 @@ button
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
-.dashbord .top, .bottom
+.bottom>div
 {
  display: flex;
  justify-content: space-between;
  align-items: center;
- 
  width: 100%;
  margin-bottom: 5px;
 }
 .top>p
 {
     
-    text-align: center;
+    
     width: 33.33%;
+    
 }
 
 .bottom>p
 {
-    text-align: center;
+    
     width: 33.33%;
-    margin: 0 3px;
+    
+}
+.bottom
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.top
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
