@@ -89,7 +89,7 @@ const app= new Vue({
     methods:
     {
         next(){
-            check()
+            check();
             app.step++
             
         },
@@ -106,7 +106,8 @@ function check()
     inputPass=document.getElementById("inputPass")
    if( inputName.value=="")
    {
-       return app.step==1
+      alert("Bitte füllen Sie alle Felder")
        
    }
+   return
 }
