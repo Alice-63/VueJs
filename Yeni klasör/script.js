@@ -89,8 +89,9 @@ const app= new Vue({
     methods:
     {
         next(){
-            app.step++
             check()
+            app.step++
+            
         },
         abmelden(){
             app.step--
@@ -103,9 +104,9 @@ function check()
 {
     inputName=document.getElementById("inputName");
     inputPass=document.getElementById("inputPass")
-   if( inputName.value=="" & inputPass=="")
+   if( inputName.value=="")
    {
-       inputName.style.borderBottom="1px solid red;"
-       return
+       return app.step==1
+       
    }
 }
