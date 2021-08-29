@@ -152,15 +152,20 @@ button
  display: flex;
  justify-content: space-between;
  align-items: center;
+ 
  width: 100%;
+ margin-bottom: 5px;
 }
-.top>h3
+.top>p
 {
-    margin-right: 10px;
+    
     text-align: center;
+    width: 33.33%;
 }
 
 .bottom>p
 {
     text-align: center;
+    width: 33.33%;
+    margin: 0 3px;
 }

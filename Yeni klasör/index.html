@@ -41,11 +41,19 @@
    <div class="dashbord" >
        <h1>Dashbord</h1>
     <div class="top">
-        <h3>Vorname</h3>|<h3>Nachname</h3>|<h3>Alter</h3>
+        <p><b>Vorname</b></p>|<p><b>Nachname</b></p>|<p><b>Alter</b></p>
     </div>
-    <hr>
+    
     <div class="bottom">
-        <span>Max</span>|<p>Mustermann</p>|<p>29</p>
+        <template v-for="x in 5">
+            <div>
+                <p>Max</p>|<p>Mustermann</p>|<p>29</p>
+            </div>
+            
+        </template>
+     
+        
+       
     </div>
     </div>
    </div>
