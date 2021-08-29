@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{box-sizing: border-box;}
+
+
+body
+{
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(88,101,185);
+    background: linear-gradient(90deg, rgba(88,101,185,1) 0%, rgba(28,145,226,1) 50%, rgba(34,220,253,1) 100%);
+   
+}
+h1,h2,h3,h4,h5,h6
+{
+    margin: 0;
+}
+a
+{
+    text-decoration: none;
+    color: dodgerblue;
+}
+button
+{
+    outline: none;
+    border: none;
+    padding: 13px 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary
+{
+    background-color: dodgerblue;
+}
+.btn-primary:hover
+{
+    background-color: rgb(27, 125, 223);
+}
+
+.container
+{
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 3px 15px 0px rgba(0,39,71,0.35);
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+}
+.container>div
+{
+  
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container>img
+{
+    width: 100px;
+}
+.inputWithIcon>input
+{
+   width:100%;
+   border: none;
+   border-bottom: 1px solid #aaa;
+  
+   margin: 8px 0;
+   outline: none;
+   padding:8px;
+   box-sizing: border-box;
+   transition: .3s;
+}
+.inputWithIcon>input:focus
+{
+    border-bottom:2px solid dodgerBlue;
+   
+}
+.inputWithIcon>input:focus + i
+{
+    color: dodgerBlue;
+    
+}
+.inputWithIcon input
+{
+    padding-left: 40px;
+}
+.inputWithIcon
+{
+    position: relative;
+}
+.inputWithIcon i
+{
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 9px 8px;
+    color: #aaa;
+}
+
+.unten
+{
+    font-size: 0.7em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
