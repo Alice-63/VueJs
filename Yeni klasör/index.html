@@ -11,7 +11,7 @@
 <body>
 <div id="app">
     <div class="container" >
-       <h1>Anmelden</h1>
+       <div class="anmelden"><h1>Anmelden</h1></div>
         <div v-if="step==1">
             <span>Benutzername</span>
             <div class="inputWithIcon">
@@ -23,6 +23,16 @@
                 <input type="text" placeholder="Passwort eingeben">
                 <i class="fa fa-lock-alt fa-lg fa-fw" aria-hidden="true"></i>
             </div>
+            <div class="passVergessen">
+               <a href="" style="text-decoration: none;color: #37424c;">Passwort vergessen?</a>
+            </div>
+            <div class="btn">
+                <button class="btn-primary">Anmelden</button>
+            </div>
+            <div class="unten">
+                <span>Sie haben kein Konto?</span>
+                <a href="" style="color: #1ca3ea;" >Jetz registrieren</a>
+            </div>
            
         </div>
     </div>
@@ -31,7 +41,7 @@
         <input type="password" placeholder="Passwort">
         <div class="unten">
             Sie haben noch kein Konto?
-            <a href="">Jetzt registrieren!</a>
+            <a href="" >Jetzt registrieren!</a>
         </div>
         <button class="btn-primary">Anmelden</button>
     </div>

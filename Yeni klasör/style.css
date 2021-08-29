@@ -18,24 +18,23 @@ h1,h2,h3,h4,h5,h6
 {
     margin: 0;
 }
-a
-{
-    text-decoration: none;
-    color: dodgerblue;
-}
+
 button
 {
     outline: none;
     border: none;
     padding: 13px 25px;
     color: white;
-    font-weight: bold;
+    font-size: 0.9em;
     cursor: pointer;
 }
 
 .btn-primary
 {
     background-color: dodgerblue;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
 }
 .btn-primary:hover
 {
@@ -51,6 +50,7 @@ button
 
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
 }
 .container>div
 {
@@ -60,25 +60,37 @@ button
     flex-direction: column;
 }
 
-.container>img
+.anmelden
 {
-    width: 100px;
+  
+    display: flex;
+    justify-content:center;
+    align-items: center ;
+    margin-bottom: 20px;
+    
+}
+.container span
+{
+    font-size: 0.8em;
+    color: #37424c;
+    margin-bottom: 5px;
+    
 }
 .inputWithIcon>input
 {
    width:100%;
    border: none;
    border-bottom: 1px solid #aaa;
-  
+  color: #8fa4b7;
    margin: 8px 0;
    outline: none;
    padding:8px;
    box-sizing: border-box;
-   transition: .3s;
+   transition: .1s;
 }
 .inputWithIcon>input:focus
 {
-    border-bottom:2px solid dodgerBlue;
+    border-bottom:1px solid dodgerBlue;
    
 }
 .inputWithIcon>input:focus + i
@@ -102,10 +114,26 @@ button
     padding: 9px 8px;
     color: #aaa;
 }
+.passVergessen
+{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
 
 .unten
 {
     font-size: 0.7em;
     margin-top: 15px;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.a2
+{
+    color: dodgerblue;
 }
