@@ -10,9 +10,10 @@
 </head>
 <body>
 <div id="app">
-    <div class="container" >
-       <div class="anmelden"><h1>Anmelden</h1></div>
-        <div v-if="step==1">
+    <div class="container"  v-if="2==1">
+       
+        <div   >
+            <div class="anmelden"><h1>Anmelden</h1></div>
             <span>Benutzername</span>
             <div class="inputWithIcon">
                 <input type="text" placeholder="Benutzername eingeben">
@@ -36,15 +37,18 @@
            
         </div>
     </div>
-    <div class="container" v-if="step==2">
-        <h2>Passwort eingeben</h2>
-        <input type="password" placeholder="Passwort">
-        <div class="unten">
-            Sie haben noch kein Konto?
-            <a href="" >Jetzt registrieren!</a>
-        </div>
-        <button class="btn-primary">Anmelden</button>
+    <div class="container" v-if ="2==2">
+   <div class="dashbord" >
+       <h1>Dashbord</h1>
+    <div class="top">
+        <h3>Vorname</h3>|<h3>Nachname</h3>|<h3>Alter</h3>
     </div>
+    <hr>
+    <div class="bottom">
+        <span>Max</span>|<p>Mustermann</p>|<p>29</p>
+    </div>
+    </div>
+   </div>
 </div>
 
 

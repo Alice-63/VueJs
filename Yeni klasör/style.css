@@ -137,3 +137,30 @@ button
 {
     color: dodgerblue;
 }
+/* DASHBORD */
+
+.dashbord
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashbord .top, .bottom
+{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+}
+.top>h3
+{
+    margin-right: 10px;
+    text-align: center;
+}
+
+.bottom>p
+{
+    text-align: center;
+}
