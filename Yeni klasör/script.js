@@ -90,7 +90,7 @@ const app= new Vue({
     {
         next(){
             check();
-            app.step++
+            
             
         },
         abmelden(){
@@ -106,8 +106,16 @@ function check()
     inputPass=document.getElementById("inputPass")
    if( inputName.value=="")
    {
-      alert("Bitte füllen Sie alle Felder")
+      
        
    }
-   return
+   else if(inputPass=="")
+   {
+    alert()
+   }
+   
+   else
+   {
+    app.step++
+   }
 }
