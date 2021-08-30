@@ -105,25 +105,20 @@ function check()
 {
     inputName=document.getElementById("inputName");
     inputPass=document.getElementById("inputPass");
-    inputNameValue=document.getElementById("inputName").value;
     i=document.getElementById("i")
-   if( inputNameValue.length<5)
+   if( inputName.value=="")
    {
      
       inputName.style.borderColor="red"
       i.style.color="red"
      
    }
-   else if(inputNameValue.length>=5)
+   else
    {
     inputName.style.borderColor="dodgerBlue"
     i.style.color="dodgerBlue"
    
-    }
-
-    else
-    {
-        if(inputPass.value=="")
+    if(inputPass.value=="")
     {
         inputPass.style.borderColor="red"
         i2.style.color="red"
@@ -134,7 +129,7 @@ function check()
         i2.style.color="dodgerBlue"
         app.step++
     }
-    }
+   }
    
    
 }
