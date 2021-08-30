@@ -46,7 +46,7 @@ new Vue({
 
             var point=Math.ceil(Math.random()*15);
             this.player_heal-=point;
-            this.add_to_log({turn:"p", text: "Canavar Atagi ("+point+")"})
+            this.add_to_log({turn:"m", text: "Canavar Atagi ("+point+")"})
         
         },
         add_to_log:function(log){
@@ -64,7 +64,8 @@ new Vue({
                 if(confirm("Oyunu KAYBETTINIZ. Tekrar etmek ister misniz?"))
                 {
                     this.player_heal=100,
-                    this.monster_heal=100
+                    this.monster_heal=100,
+                    this.logs=[]
                 }
             }
             else if(value>=100)
@@ -79,7 +80,8 @@ new Vue({
                 if(confirm("Oyunu KAZANDINIZ. Tekrar etmek ister misniz?"))
                 {
                     this.player_heal=100,
-                    this.monster_heal=100
+                    this.monster_heal=100,
+                    this.logs=[]
                 }
             }
         }
