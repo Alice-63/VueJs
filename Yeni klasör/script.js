@@ -106,16 +106,21 @@ function check()
     inputPass=document.getElementById("inputPass")
    if( inputName.value=="")
    {
+       alert()
       
-       
+     
    }
-   else if(inputPass=="")
-   {
-    alert()
-   }
-   
    else
    {
-    app.step++
+    if(inputPass=="")
+    {
+         alert()
+    }
+    else
+     {
+         app.step++
+     }
    }
+   
+   
 }
