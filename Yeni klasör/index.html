@@ -27,7 +27,7 @@
                 </div>
                 <div class="passVergessen">
                     <a href="" style="text-decoration: none;color: #37424c;" required>Passwort vergessen?</a>
-                    </div>
+                </div>
                     <div class="btn">
                         <button class="btn-primary" @click="next()">Anmelden</button>
                     </div>
@@ -41,24 +41,24 @@
        
     </div>
     <div class="container" v-if ="step==2">
-   <div class="dashbord" >
-       <h1>Dashbord</h1>
+        <div class="dashbord" >
+            <h1>Dashbord</h1>
 
-    
-    <div class="bottom">
-        <div><p><b>Vorname</b></p><p><b>Nachname</b></p><p><b>Alter</b></p></div>
-        <template v-for="x in nutzer">
-            <div>
-                <p>{{x.vorname}}</p><p>{{x.nachname}}</p><p>{{x.alter}}</p>
-            </div>
             
-        </template>
-     
-        <div style="display: flex;justify-content:flex-start ;" ><a href="#" style="text-decoration: none;" @click="abmelden()">abmelden</a></div>
-       
+            <div class="bottom">
+                <div><p><b>Vorname</b></p><p><b>Nachname</b></p><p><b>Alter</b></p></div>
+                <template v-for="x in nutzer">
+                    <div>
+                        <p>{{x.vorname}}</p><p>{{x.nachname}}</p><p>{{x.alter}}</p>
+                    </div>
+                    
+                </template>
+            
+                <div style="display: flex;justify-content:flex-start ;" ><a href="#" style="text-decoration: none;" @click="abmelden()">abmelden</a></div>
+            
+            </div>
+            </div>
     </div>
-    </div>
-   </div>
 </div>
 
 
