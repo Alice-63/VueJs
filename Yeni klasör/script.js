@@ -88,6 +88,7 @@ const app= new Vue({
     },
     methods:
     {
+      
         next(){
             check();
             
@@ -103,24 +104,37 @@ const app= new Vue({
 function check()
 {
     inputName=document.getElementById("inputName");
-    inputPass=document.getElementById("inputPass")
-   if( inputName.value=="")
+    inputPass=document.getElementById("inputPass");
+    inputNameValue=document.getElementById("inputName").value;
+    i=document.getElementById("i")
+   if( inputNameValue.length<5)
    {
-       alert()
-      
+     
+      inputName.style.borderColor="red"
+      i.style.color="red"
      
    }
-   else
+   else if(inputNameValue.length>=5)
    {
-    if(inputPass=="")
+    inputName.style.borderColor="dodgerBlue"
+    i.style.color="dodgerBlue"
+   
+    }
+
+    else
     {
-         alert()
+        if(inputPass.value=="")
+    {
+        inputPass.style.borderColor="red"
+        i2.style.color="red"
     }
     else
-     {
-         app.step++
-     }
-   }
+    {
+        inputPass.style.borderColor="dodgerBlue"
+        i2.style.color="dodgerBlue"
+        app.step++
+    }
+    }
    
    
 }

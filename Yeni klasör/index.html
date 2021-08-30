@@ -17,16 +17,16 @@
             <span>Benutzername</span>
             <form action="">
                 <div class="inputWithIcon">
-                    <input id="inputName" type="text" placeholder="Benutzername eingeben" required>
-                    <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                    <input id="inputName" type="text" placeholder="Benutzername eingeben" @focus ="check()" required>
+                    <i id="i" class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
                 </div>
                 <span>Passwort</span>
                 <div class="inputWithIcon">
-                    <input id="inputPass" type="password" placeholder="Passwort eingeben" required>
-                    <i class="fa fa-lock-alt fa-lg fa-fw" aria-hidden="true"></i>
+                    <input id="inputPass" type="password" placeholder="Passwort eingeben" >
+                    <i id="i2" class="fa fa-lock-alt fa-lg fa-fw" aria-hidden="true"></i>
                 </div>
                 <div class="passVergessen">
-                    <a href="" style="text-decoration: none;color: #37424c;" required>Passwort vergessen?</a>
+                    <a href="" style="text-decoration: none;color: #37424c;" >Passwort vergessen?</a>
                 </div>
                     <div class="btn">
                         <button class="btn-primary" @click="next()">Anmelden</button>
