@@ -16,26 +16,23 @@ new Vue({
             var point=Math.ceil(Math.random()*10);
             this.monster_heal-=point;
             this.monster_attack()
-            console.log(this.monster_heal)
-            console.log(this.player_heal)
+           
 
         },
         special_attack:function(){
             var point=Math.ceil(Math.random()*20);
             this.monster_heal-=point;
             this.monster_attack()
-            console.log(this.monster_heal)
-            console.log(this.player_heal)
+            
 
             
         },
         heal_up:function(){
 
             var point=Math.ceil(Math.random()*20);
-            this.monster_heal+=point;
+            this.player_heal+=point;
             this.monster_attack()
-            console.log(this.monster_heal)
-            console.log(this.player_heal)
+           
 
         },
         give_up:function(){
@@ -45,10 +42,29 @@ new Vue({
 
             var point=Math.ceil(Math.random()*15);
             this.player_heal-=point;
-            console.log(this.monster_heal)
-            console.log(this.player_heal)
+        
 
            
+        }
+    },
+    watch:
+    {
+        player_heal:function(value){
+
+            if(value<=0)
+            {
+                this.player_heal=0;
+            }
+            else if(value>=100)
+            {
+                this.player_heal=100
+            }
+        },
+        monster_heal:function(value){
+            if(value<=0)
+            {
+                this.monster_heal=0
+            }
         }
     }
 })
