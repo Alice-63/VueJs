@@ -12,8 +12,8 @@
 <div id="app">
     <div class="container"  v-if="step==1">
        
-        <div   >
-            <div class="anmelden"><h1>Anmelden</h1></div>
+
+        <div class="anmelden"><h1>Anmelden</h1></div>
             <span>Benutzername</span>
             <form action="">
                 <div class="inputWithIcon">
@@ -27,18 +27,18 @@
                 </div>
                 <div class="passVergessen">
                     <a href="" style="text-decoration: none;color: #37424c;" required>Passwort vergessen?</a>
-                 </div>
-                 <div class="btn">
-                     <button class="btn-primary" @click="next()">Anmelden</button>
-                 </div>
-                 <div class="unten">
-                     <span>Sie haben kein Konto?</span>
-                     <a href="" style="color: #1ca3ea;" >Jetz registrieren</a>
-                 </div>
+                    </div>
+                    <div class="btn">
+                        <button class="btn-primary" @click="next()">Anmelden</button>
+                    </div>
+                    <div class="unten">
+                        <span>Sie haben kein Konto?</span>
+                        <a href="" style="color: #1ca3ea;" >Jetz registrieren</a>
+                    </div>
             </form>
         
            
-        </div>
+       
     </div>
     <div class="container" v-if ="step==2">
    <div class="dashbord" >
