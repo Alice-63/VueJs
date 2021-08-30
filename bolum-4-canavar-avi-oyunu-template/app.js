@@ -10,7 +10,7 @@ new Vue({
     methods:
     {
         start_game:function(){
-
+            this.game_is_on=true
         },
         attack:function(){
 
