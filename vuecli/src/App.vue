@@ -23,6 +23,14 @@ export default{
 </script>
 
 
-<style>
+<style scoped>
+div{
+  color: red;
+}
+img
+{
+  width: 20%;
+}
+</style>>
 
-</style>
+
