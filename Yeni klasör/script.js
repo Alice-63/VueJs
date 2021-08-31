@@ -103,9 +103,9 @@ const app= new Vue({
 
 function check()
 {
-    inputName=document.getElementById("inputName");
-    inputPass=document.getElementById("inputPass");
-    i=document.getElementById("i")
+   var inputName=document.getElementById("inputName");
+    var inputPass=document.getElementById("inputPass");
+    var i=document.getElementById("i")
    if( inputName.value=="")
    {
      
@@ -133,4 +133,32 @@ function check()
    }
    
    
+}
+function check2 (){
+    var inputName=document.getElementById("inputName");
+    var inputPass=document.getElementById("inputPass");
+    var i=document.getElementById("i")
+    var i2=document.getElementById("i2")
+    var valueName=inputName.value;
+    var valuePass=inputPass;
+  if(valueName.length<5)
+  {
+    inputName.style.borderColor="red"
+    i.style.color="red"
+  }
+  else
+  {
+   inputName.style.borderColor="dodgerBlue"
+   i.style.color="dodgerBlue"
+  }
+  if(valuePass.length<5)
+  {
+    inputPass.style.borderColor="red"
+    i2.style.color="red"
+  }
+  else
+  {
+   inputPass.style.borderColor="dodgerBlue"
+   i2.style.color="dodgerBlue"
+  }
 }
