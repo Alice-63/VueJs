@@ -122,6 +122,7 @@ function check()
     {
         inputPass.style.borderColor="red"
         i2.style.color="red"
+        
     }
     else
     {

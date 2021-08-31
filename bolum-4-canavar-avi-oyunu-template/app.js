@@ -32,7 +32,7 @@ new Vue({
         },
         heal_up:function(){
 
-            var point=Math.ceil(Math.random()*20);
+            var point=Math.ceil(Math.random()*25);
             this.player_heal+=point;
             this.add_to_log({turn:"p", text: "Ilk Yardim ("+point+")"})
             this.monster_attack()
@@ -51,7 +51,8 @@ new Vue({
         },
         add_to_log:function(log){
             this.logs.push(log)
-            console.log(this.logs)
+           
+            
         }
     },
     watch:

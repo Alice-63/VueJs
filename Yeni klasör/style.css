@@ -78,19 +78,20 @@ button
 }
 .inputWithIcon>input
 {
-   width:100%;
-   border: none;
-   border-bottom: 1px solid #aaa;
-  color: #8fa4b7;
-   margin: 8px 0;
-   outline: none;
-   padding:8px;
-   box-sizing: border-box;
-   transition: .1s;
+    width:100%;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    color: #8fa4b7;
+    margin: 8px 0;
+    outline: none;
+    padding:8px;
+    box-sizing: border-box;
+    transition: .1s;
 }
 .inputWithIcon>input:focus
 {
     border-bottom:1px solid dodgerBlue;
+   
    
 }
 .inputWithIcon>input:focus + i
@@ -137,7 +138,7 @@ button
 {
     color: dodgerblue;
 }
-/* DASHBORD */
+/* /////////////////DASHBORD /////////////////*/
 
 .dashbord
 {
