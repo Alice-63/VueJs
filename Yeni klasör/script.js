@@ -144,9 +144,10 @@ function check2 (){
     var i2=document.getElementById("i2")
     var valueName=inputName.value;
     var valuePass=inputPass.value;
+    
   if(valueName.length<5)
   {
-      console.log(app.value.length)
+     
     inputName.style.borderColor="red"
     i.style.color="red"
   }

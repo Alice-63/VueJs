@@ -1,14 +1,25 @@
 <template>
   <div id="app">
-    {{text}}
+ 
+
+    <Uhr/>
+     <Uhr/>
+    
   </div>
   <router-view/>
 </template>
 <script>
 
-data=function(){
-  return{text:"Ali"}
+import Uhr from "./components/Uhr.vue"
+
+export default{
+  name:"app",
+  components:{
+    Uhr
+  }
 }
+
+
 </script>
 
 
