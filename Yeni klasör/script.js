@@ -84,6 +84,7 @@ const app= new Vue({
     el:"#app",
     data:{
         step:1,
+        inputVorname:""
        
     },
     methods:
@@ -103,11 +104,11 @@ const app= new Vue({
 
 function check()
 {
-   var inputName=document.getElementById("inputName");
+//    var inputName=document.getElementById("inputName");
     var inputPass=document.getElementById("inputPass");
     var i=document.getElementById("i")
     var i2=document.getElementById("i2")
-   if( inputName.value=="")
+   if( app.inputVorname=="")
    {
      
       inputName.style.borderColor="red"
@@ -116,8 +117,7 @@ function check()
    }
    else
    {
-    inputName.style.borderColor="dodgerBlue"
-    i.style.color="dodgerBlue"
+    
    
     if(inputPass.value=="")
     {
@@ -136,15 +136,16 @@ function check()
    
 }
 function check2 (){
-    console.log("Check")
+    
     var inputName=document.getElementById("inputName");
     var inputPass=document.getElementById("inputPass");
     var i=document.getElementById("i")
     var i2=document.getElementById("i2")
     var valueName=inputName.value;
-    var valuePass=inputPass;
-  if(valueName.length<5)
+    var valuePass=inputPass.value;
+  if(app.inputVorname.length<5)
   {
+      console.log(app.inputVorname.length)
     inputName.style.borderColor="red"
     i.style.color="red"
   }
@@ -155,6 +156,7 @@ function check2 (){
 
     if(valuePass.length<5)
   {
+    console.log("Check")
     inputPass.style.borderColor="red"
     i2.style.color="red"
   }
