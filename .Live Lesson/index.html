@@ -20,7 +20,7 @@
 <body id="body" class="">
 <div class="container">
   <div id="app" >
-<button @click="show=!show">Toggle</button>
+<button @click="show=!show" ref="button">Toggle</button>
   <p v-if="show">Beni görebiliyor musun?</p>
   <p>Ya da Beni görebiliyor musun?</p>
 --
@@ -60,6 +60,8 @@
  
 
          
+<input type="text" ref="input" placeholder="Ali">
+<p ref="p">ALi</p>
   
 
 
@@ -97,7 +99,10 @@
           
         }
       })
-       console.log(app2)
+
+      app.$refs.input.style.color="red";
+      app.$refs.p.innerHTML="<a href='#'>ALICAN</a>"
+      
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
