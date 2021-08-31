@@ -4,14 +4,15 @@
    <input type="text" v-model="inp_name" placeholder="Name">
    <input type="text" v-model="inp_surname" placeholder="Surname">
    <input type="number" v-model="inp_age" placeholder="Age">
-   <button>Add</button>
+   <button @click="add">Add</button>
  </div>
  <div class="resulst">
-   <div v-for="person in personen" :key="person.id">
+   <div v-for="(person,i) in personen" :key="person.id">
+     <div>{{i}}</div>
      <div>{{person.name}}</div>
      <div>{{person.surname}}</div>
      <div>{{person.age}}</div>
-     <div class="delete">
+     <div class="delete" @click="del()">
        Delete
      </div>
    </div>
@@ -33,19 +34,33 @@ export default{
     return{
       personen:
       [
+        
+        
+      ],
+      inp_name:"",
+      inp_surname:"",
+      inp_age:""
+    }
+  },
+  methods:
+  {
+    add:function()
+    {
+      this.personen.push(
         {
-          id:0,
-          name:"Max",
-          surname:"Mustermann",
-          age:25
-        },
-        {
-          id:1,
-          name:"Test",
-          surname:"Mustermann",
-          age:25
+          
+          name:this.inp_name,
+          surname:this.inp_surname,
+          age:this.inp_age
         }
-      ]
+      )
+      this.inp_name="",
+      this.inp_surname="",
+      this.inp_age=""
+
+    },
+    del:function(i){
+      this.personen.splice(i,1)
     }
   }
 }
