@@ -106,6 +106,7 @@ function check()
    var inputName=document.getElementById("inputName");
     var inputPass=document.getElementById("inputPass");
     var i=document.getElementById("i")
+    var i2=document.getElementById("i2")
    if( inputName.value=="")
    {
      
@@ -135,6 +136,7 @@ function check()
    
 }
 function check2 (){
+    console.log("Check")
     var inputName=document.getElementById("inputName");
     var inputPass=document.getElementById("inputPass");
     var i=document.getElementById("i")
