@@ -152,8 +152,8 @@ function check2 (){
   {
    inputName.style.borderColor="dodgerBlue"
    i.style.color="dodgerBlue"
-  }
-  if(valuePass.length<5)
+
+    if(valuePass.length<5)
   {
     inputPass.style.borderColor="red"
     i2.style.color="red"
@@ -163,4 +163,6 @@ function check2 (){
    inputPass.style.borderColor="dodgerBlue"
    i2.style.color="dodgerBlue"
   }
+  }
+ 
 }
