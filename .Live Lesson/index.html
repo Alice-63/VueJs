@@ -18,50 +18,13 @@
 </head>
 
 <body id="body" class="">
-<div class="container">
-  <div id="app" >
-<button @click="show=!show" ref="button">Toggle</button>
-  <p v-if="show">Beni görebiliyor musun?</p>
-  <p>Ya da Beni görebiliyor musun?</p>
---
-<p v-show="show">Beni görebiliyor musun?</p>
-<p >Ya da Beni görebiliyor musun?</p>
 
-<hr>
 
-<ul>
-  <li v-for="(p,i) in products">{{i+1}}.{{p}}</li>
-</ul>
-
-<hr>
-<ul>
-  <li v-for="(a,b,c) in customObject">{{c+1}}.{{b}}:{{a}}</li>
-</ul>
-<hr>
-<ul>
-  <li v-for="(a,b) in testData">{{b}}:{{a}}
-  <ul>
-    <li v-if="b=='data'" v-for="i in a">{{i}}</li>
-  </ul>
-</li>
-</ul>
  
 <hr>
-<ul>
-  <li v-for="(prop,key) in testData">
-    {{key}} : {{prop}}
-    <ul>
-      <li v-if="key=='name'" v-for="item in prop">
-        {{item}}
-      </li>
-    </ul>
-  </li>
-</ul>
- 
-
-         
-<input type="text" ref="input" placeholder="Ali">
-<p ref="p">ALi</p>
+<div id="app2">
+  {{ad}}
+</div>
   
 
 
@@ -70,38 +33,19 @@
 <!-- js bereich -->
     <script src="script.js" type="module"></script>
     <script>
-      var app2= new Vue({})
-     var app= new Vue({
+     
+    
 
-        el:"#app",
-        data:
-        {
-          show:false,
-          
-        
-          products:["Kitap","Defter","Kalem","Silgi"],
-          customObject:
-          {
-            title:"Game of Thrones",
-            author:"George R.R",
-            books:"7"
-          },
-          testData:
-          {
-            name:"NesnedLoop",
-            id:10,
-            data:[3,45,19,14.02,20.30,20.18]
-          }
-                  
-        },
-        methods:
-        {
-          
-        }
-      })
+      
+      
+    var app2= new Vue({
+    
+      data:{
+        ad:"Mustafa Sami"
+      }
+    })
 
-      app.$refs.input.style.color="red";
-      app.$refs.p.innerHTML="<a href='#'>ALICAN</a>"
+    app2.$mount("#app2")
       
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
