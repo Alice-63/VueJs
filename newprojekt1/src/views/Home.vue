@@ -38,7 +38,7 @@ export default {
   methods:
   {
     add:function(){
-      this.names.splice(9,3,"Ayse","Veli")
+      this.names.slice(1,1)
     }
   }
   
