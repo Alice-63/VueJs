@@ -5,8 +5,8 @@
     <KayitFormu/>
     <Uhr/>
     
-    <p>{{adlar}}</p>
-    <button @click="add()">Ekle</button>
+    <p v-for="(a,b,c) in names" :key="a">{{c}}.{{b}}:{{a}}</p>
+    <button @click="add">Ekle</button>
   </div>
 </template>
 
@@ -27,13 +27,21 @@ export default {
     return{
     names:
     [
-     "Ali",
-     "Meryem",
-     "Mustafa"
-
-    ],
-    adlar:
-    [
+      {
+        ad:"Meryem",
+        soyad:"Cetin",
+        age:36
+      },
+      {
+        ad:"Ali",
+        soyad:"Cetin",
+        age:36
+      },
+      {
+        ad:"Mustafa",
+        soyad:"Cetin",
+        age:11
+      }
 
     ]
   
@@ -42,7 +50,7 @@ export default {
   methods:
   {
     add:function(){
-      this.adlar=this.names.slice(0,3)
+      this.names.push('ad:"zeynep",soyad:"Cetin", age:8')
     }
   }
   
