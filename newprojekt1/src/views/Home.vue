@@ -5,7 +5,7 @@
     <KayitFormu/>
     <Uhr/>
     
-    <p>{{names}}</p>
+    <p>{{adlar}}</p>
     <button @click="add()">Ekle</button>
   </div>
 </template>
@@ -31,6 +31,10 @@ export default {
      "Meryem",
      "Mustafa"
 
+    ],
+    adlar:
+    [
+
     ]
   
     }
@@ -38,7 +42,7 @@ export default {
   methods:
   {
     add:function(){
-      this.names.slice(1,1)
+      this.adlar=this.names.slice(0,3)
     }
   }
   
