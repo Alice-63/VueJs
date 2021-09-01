@@ -4,8 +4,9 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <KayitFormu/>
     <Uhr/>
-    <p>{{name}}</p>
-    <p>{{}}</p>
+    
+    <p>{{names}}</p>
+    <button @click="add()">Ekle</button>
   </div>
 </template>
 
@@ -26,24 +27,18 @@ export default {
     return{
     names:
     [
-      {
-        ad:"Meryem",
-        soyad:"Cetin",
-        age:36
-      },
-      {
-        ad:"Ali",
-        soyad:"Cetin",
-        age:36
-      },
-      {
-        ad:"Mustafa",
-        soyad:"Cetin",
-        age:11
-      }
+     "Ali",
+     "Meryem",
+     "Mustafa"
 
     ]
   
+    }
+  },
+  methods:
+  {
+    add:function(){
+      this.names.splice(0,1,"Ayse","Veli")
     }
   }
   
