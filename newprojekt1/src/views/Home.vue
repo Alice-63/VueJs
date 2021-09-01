@@ -5,7 +5,10 @@
     <KayitFormu/>
     <Uhr/>
     
-    <p v-for="(a,b,c) in names" :key="a">{{c}}.{{b}}:{{a}}</p>
+    <div v-for="(name,index) in names" :key="name">
+      {{index+1}}.<div v-for="(a,b) in name" :key="a.id">{{b}}:{{a}}
+    </div>
+    </div>
     <button @click="add">Ekle</button>
   </div>
 </template>
