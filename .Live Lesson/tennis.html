@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+</head>
+<style>
+    body{
+        height:100vh;
+        background-image: url("https://cdn.pixabay.com/photo/2021/06/04/06/54/racket-6308994_960_720.jpg") ;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color:rgb(38, 38, 41)
+    }
+    button{
+        padding:20px 20px;
+        margin: 10px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        box-shadow: 0px 3px 10px 0px rgba(67, 69, 70, 0.35);
+    }
+    span{
+        font-size: 5em;
+    }
+    #app{
+        box-shadow: 0px 3px 10px 0px rgba(67, 69, 70, 0.35);
+
+  background-color: rgba(224, 217, 217, 0.555);
+  border-radius: 10px;
+  padding:30px;
+    }
+    #container::before{
+        filter: blur(1px);
+    }
+    #app>div{
+        display: flex;
+        justify-content: center;
+        
+    }
+    #info{
+        font-size: 5em;
+        color:rgb(172, 71, 24);
+    }
+
+</style>
+<body>
+    <div id="app">
+        <div id="container">
+            <span>{{ score1 }}</span>
+            <span>-</span>
+            <span>{{ score2 }}</span>
+        </div>
+
+        <h1 id="info" @change="scoreCheck()">{{ info }}</h1>
+        
+        <div>
+
+            <span>{{p1_p}}</span><button @click="ply1()">Player1</button>
+            <button @click="ply2()">Player2</button><span>{{p2_p}}</span>
+        </div>
+    
+    </div>
+
+
+
+
+    <script src="tennis.js"></script>
+</body>
+</html>
