@@ -6,15 +6,16 @@
         <img src="./assets/logo.png" alt="" style="width:100px">
       </div>
       <div id="nav">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link> |
-        <router-link to="/team">Unsere Team</router-link> |
-        <router-link to="/kontakt">Kontakt</router-link> |
-        <router-link to="/yeni-sayfa">Yeni Sayfa</router-link>
+        <router-link to="/">Home</router-link> 
+      
       </div>
       </div>
     </header>
    <main> 
+     <Props vorname="Ali Cetindag" nachname="Zeynep Cetindag" :hobbys="['Fahhrad,Lesen,Film']"/>
+     <Props num="2" />
+     <button @click="num++">Ekle</button>
+     
      <router-view/>
    </main>
    <footer>
@@ -23,7 +24,28 @@
    </footer>
   </div>
 </template>
+<script>
+// @ is an alias to /src
 
+import Props from "./components/Props.vue"
+
+
+export default {
+  name: 'Home',
+  components: {
+    Props
+   
+  },
+  props:
+  {
+    
+  }
+  
+}
+
+
+
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
