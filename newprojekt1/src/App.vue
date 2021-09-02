@@ -12,9 +12,9 @@
       </div>
     </header>
    <main> 
-     <Props vorname="Ali Cetindag" nachname="Zeynep Cetindag" :hobbys="['Fahhrad,Lesen,Film']"/>
-     <Props num="2" />
-     <button @click="num++">Ekle</button>
+     <Props v-bind="maxData"/>
+     <Props v-bind="martinData"/>
+  
      
      <router-view/>
    </main>
@@ -39,6 +39,25 @@ export default {
   props:
   {
     
+  },
+  data:function()
+  { return{
+    maxData:
+    {
+  "vorname":"Max",
+  "nachname":"Mustermann",
+  "sport":false
+    },
+    
+       martinData:
+    {
+  "vorname":"Martin",
+  "nachname":"Mustermann",
+  "sport":true
+    }
+    }
+    
+  }
   }
   
 }
