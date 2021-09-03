@@ -28,7 +28,7 @@ export default {
   data:function()
   {
 
-    return status:"Pasif"
+    return{ status:"Pasif"}
   }
 }
 </script>
