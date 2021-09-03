@@ -12,8 +12,8 @@
       </div>
     </header>
    <main> 
-     <Props v-bind="maxData"/>
-     <Props v-bind="martinData"/>
+     <input type="text" v-model="name">
+  <Props :vorname="vorname" />
   
      
      <router-view/>
@@ -42,24 +42,17 @@ export default {
   },
   data:function()
   { return{
-    maxData:
-    {
-  "vorname":"Max",
-  "nachname":"Mustermann",
-  "sport":false
-    },
-    
-       martinData:
-    {
-  "vorname":"Martin",
-  "nachname":"Mustermann",
-  "sport":true
-    }
-    }
-    
-  }
-  }
   
+
+ 
+    }
+    
+  },
+  computed:
+  {
+    vorname:this.name
+  }
+  }
 
 
 
