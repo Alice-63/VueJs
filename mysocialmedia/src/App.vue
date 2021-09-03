@@ -8,6 +8,7 @@
       <Profilephoto/>
       <Profiletitle/>
       <Posts/>
+      <h1>{{status}}</h1>
     </div>
     <router-view/>
   </div>
@@ -23,6 +24,11 @@ export default {
     Profilephoto,
     Profiletitle,
     Posts
+  },
+  data:function()
+  {
+
+    return status:"Pasif"
   }
 }
 </script>
