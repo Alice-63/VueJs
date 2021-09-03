@@ -10,6 +10,7 @@
       <Posts/>
       <h1>{{status}}</h1>
       <hr>
+      <Test/>
     </div>
     <router-view/>
   </div>
