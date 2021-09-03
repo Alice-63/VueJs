@@ -9,6 +9,7 @@
       <Profiletitle/>
       <Posts/>
       <h1>{{status}}</h1>
+      <hr>
     </div>
     <router-view/>
   </div>
