@@ -19,15 +19,14 @@
 import Profilephoto from "./components/Profilephoto.vue"
 import Profiletitle from "./components/Profiletitle.vue"
 import Posts from "./components/Posts.vue"
-import Test from './components/Test.vue'
+
 
 export default {
   components:
   {
     Profilephoto,
     Profiletitle,
-    Posts,
-    Test
+    Posts
   },
   data:function()
   {
