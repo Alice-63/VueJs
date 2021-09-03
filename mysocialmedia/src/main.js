@@ -6,13 +6,11 @@ import Test from './components/Test.vue'
 
 
 Vue.config.productionTip = false
+Vue.component("Test",Test)
 
 new Vue({
   router,
   store,
-  components:
-  {
-   Test
-  },
+
   render: h => h(App)
 }).$mount('#app')
