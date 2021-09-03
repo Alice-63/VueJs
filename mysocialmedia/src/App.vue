@@ -5,12 +5,12 @@
       <router-link to="/about">About</router-link>
     </div>
     <div>
-      <Profilephoto/>
+      <Profilephoto test1="ALi cetindag"/>
       <Profiletitle/>
       <Posts/>
       <h1>{{status}}</h1>
       <hr>
-      <Test/>
+    
     </div>
     <router-view/>
   </div>
