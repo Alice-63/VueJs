@@ -21,7 +21,7 @@ const routes = [
   {
     path:'/Test2/:bn',
     name:'Test2',
-    component:( )=> import(".../views/Test2.vue")
+    component:( )=> import('../views/Test2.vue')
   }
 ]
 
