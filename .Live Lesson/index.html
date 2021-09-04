@@ -26,6 +26,7 @@
  <input type="text" v-model=inp>
 <p v-for="e in list">{{e}}</p>
  <button @click="add()">Add</button>
+ <button   @click="x++">X artir</button>
 </div>
   
 
@@ -58,7 +59,15 @@
           
         if(x==0)
         {
+          this.inp="Love"
+        }
+        if(x==1)
+        {
           this.inp="15 all"
+        }
+        if(x==2)
+        {
+          this.inp="30 all"
         }
           this.list.splice(0,1,this.inp)
           this.inp=""
