@@ -12,8 +12,8 @@
       </div>
     </header>
    <main> 
-     <input type="text" v-model="name">
-  <Props :vorname="vorname" />
+     <input type="text" v-model="inp">
+  <Props :vorname="inp" />
   
      
      <router-view/>
