@@ -8,10 +8,33 @@
 </template>
 
 <script>
+
+person=[
+  {
+    ad:"Ali",
+    Soyad:"Cetin",
+    yas:37
+  },
+  {
+    ad:"Mustafa",
+    Soyad:"Cetin",
+    yas:12
+  },
+  {
+    ad:"Meryem",
+    Soyad:"Cetin",
+    yas:36
+  }
+]
 import Test from "./components/Test.vue"
 
 export default {
   name: 'App',
+  data:function(){
+    return{
+      prs:person
+    }
+  },
  components:
 {
   Test
