@@ -23,9 +23,9 @@
  
 <hr>
 <div id="app2">
-  {{ad}}
-
-  <p test="Ali Cetindag">test</p>
+ <input type="text" v-model=inp>
+ {{list}}
+ <button @click="add()">Add</button>
 </div>
   
 
@@ -43,11 +43,18 @@
     var app2= new Vue({
     el:"#app2",
       data:{
-        ad:"Mustafa Sami"
+        inp:input,
+        list:
+        [
+          "Ali",
+          "Cetindag"
+        ]
       },
-      props:
+      methods:
       {
-        "test":String
+        add(){
+          this.list.splice(0,1,this.input)
+        }
       }
     })
 
