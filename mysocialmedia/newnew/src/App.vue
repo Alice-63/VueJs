@@ -9,7 +9,7 @@
 
 <script>
 
-person=[
+const person=[
   {
     ad:"Ali",
     Soyad:"Cetin",
