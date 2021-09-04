@@ -17,12 +17,12 @@
             <span>Benutzername</span>
             <form action="">
                 <div class="inputWithIcon">
-                    <input id="inputName" type="text" placeholder="Benutzername eingeben" @keyup="check2()" required>
+                    <input id="inputName" type="text" placeholder="Benutzername eingeben" @keyup="check2()" v-model="inp_vorname" required>
                     <i id="i" class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
                 </div>
                 <span>Passwort</span>
                 <div class="inputWithIcon">
-                    <input  id="inputPass" type="current-password" placeholder="Passwort eingeben" @keyup="check2()"  required>
+                    <input  id="inputPass" type="current-password" placeholder="Passwort eingeben" @keyup="check2()" v-model="inp_pass"  required>
                     <i id="i2" class="fa fa-lock-alt fa-lg fa-fw" aria-hidden="true"></i>
                 </div>
                 <div class="passVergessen">
@@ -46,9 +46,9 @@
 
             
             <div class="bottom">
-                <table>
+                <table class="table" >
                     <tr>
-                        <th>vorname</th>
+                        <th>Vorname</th>
                         <th>Nachname</th>
                         <th>Alter</th>
                     </tr>

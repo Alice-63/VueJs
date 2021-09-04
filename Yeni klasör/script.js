@@ -84,6 +84,8 @@ const app= new Vue({
     el:"#app",
     data:{
         step:1,
+        inp_vorname:"",
+        inp_pass:""
         
         
        
@@ -105,16 +107,15 @@ const app= new Vue({
 
 function check()
 {
-   var inputName=document.getElementById("inputName");
-    var inputPass=document.getElementById("inputPass");
+ 
     var i=document.getElementById("i")
     var i2=document.getElementById("i2")
-   if( inputName=="")
+   if( app.inp_vorname=="" && app.inp_pass=="")
    {
      
       inputName.style.borderColor="red"
       i.style.color="red"
-     
+     return
    }
    else
    {
@@ -158,7 +159,7 @@ function check2 (){
 
     if(valuePass.length<5)
   {
-    console.log("Check")
+    
     inputPass.style.borderColor="red"
     i2.style.color="red"
   }
