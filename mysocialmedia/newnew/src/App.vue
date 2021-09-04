@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
 
-  <Test ad="Griban" />
+  <Test v-for="p in prs" :ad="p.ad" :soyad="p.Soyad" :yas="p.yas" :key="p.id"/>
 
   </div>
 </template>
