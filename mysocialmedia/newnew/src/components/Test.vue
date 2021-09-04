@@ -1,7 +1,8 @@
 <template>
     <div>
+        <p>This is a  test page</p>
         <h1>ALi</h1>
-        <h2>{{ad}}</h2>
+        <h2>Props:{{ad}}</h2>
     </div>
 </template>
 <script>
