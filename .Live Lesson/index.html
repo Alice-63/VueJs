@@ -44,6 +44,7 @@
     el:"#app2",
       data:{
         inp:"",
+        x:0,
         list:
         [
           "Ali",
@@ -53,6 +54,12 @@
       methods:
       {
         add(){
+          x=0;
+          
+        if(x==0)
+        {
+          this.inp="15 all"
+        }
           this.list.splice(0,1,this.inp)
           this.inp=""
         }
