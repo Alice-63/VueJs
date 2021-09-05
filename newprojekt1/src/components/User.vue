@@ -9,7 +9,7 @@
     <hr>
     <div class="row">
       <app-user-detail></app-user-detail>
-      <app-user-edit @yeni="ChangeData=$event" :name="title"></app-user-edit>
+      <app-user-edit @yeni="ChangeData=$event" :name="title" :age="age"></app-user-edit>
     </div>
   </div>
 </template>
@@ -25,7 +25,8 @@
       data:function(){
         return{
           title:"",
-          ChangeData:""
+          ChangeData:"",
+          age:"25"
         }
       },
       methods:

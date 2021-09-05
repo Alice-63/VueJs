@@ -3,6 +3,7 @@
     <h3>Child Component 2</h3>
     <p>Ben User.vue isimli Parent Component'in içerisindeki bir diğer Child componentim</p>
     <p>Kullanici adi: {{name}}</p>
+    <p>Kullanici Yasi: {{age}}</p>
     <p>{{ switchName()}}</p>
     <input type="text" v-model="child">
     <button @click="VeriGonder()">Gönder</button>
@@ -25,7 +26,8 @@ export default
       type:String,
       required:true,
       default:"ALi"
-      }
+      },
+      age:String
   },
   methods:
   {
