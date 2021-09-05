@@ -4,10 +4,11 @@
     <p>Ben User.vue isimli Parent Component'in içerisindeki bir Child componentim</p>
     <p>Kullanici Yasi:{{age}}</p>
     <button @click="yeniYas()">Degistir</button>
-    <input type="text" v-model="age">
+    
   </div>
 </template>
 <script>
+import {EventBus} from '../main'
 export default
 {
   props:{
@@ -16,7 +17,8 @@ export default
   methods:
   {
     yeniYas:function(){
-      this.$emit("yas",this.age)
+      // this.$emit("yas","30")
+      EventBus.$emit("yas","30")
     }
   }
 }
