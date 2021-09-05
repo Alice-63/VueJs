@@ -5,10 +5,11 @@
     <input type="text" v-model="title">
     <p>{{title}}</p>
     <button @click="changeName()">Adimi Degistir</button>
+  <p>{{ChangeData}}</p>
     <hr>
     <div class="row">
       <app-user-detail></app-user-detail>
-      <app-user-edit :name="title"></app-user-edit>
+      <app-user-edit @yeni="ChangeData=$event" :name="title"></app-user-edit>
     </div>
   </div>
 </template>
@@ -23,14 +24,16 @@
     },
       data:function(){
         return{
-          title:""
+          title:"",
+          ChangeData:""
         }
       },
       methods:
       {
        changeName:function(){
          return this.title="Mustafa Cetin"
-       }
+       },
+       
       }
   }
 </script>
