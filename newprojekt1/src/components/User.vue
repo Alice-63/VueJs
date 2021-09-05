@@ -6,9 +6,10 @@
     <p>{{title}}</p>
     <button @click="changeName()">Adimi Degistir</button>
   <p>{{ChangeData}}</p>
+  <p>{{age}}</p>
     <hr>
     <div class="row">
-      <app-user-detail></app-user-detail>
+      <app-user-detail @yas="age=$event" :age="age"></app-user-detail>
       <app-user-edit @yeni="ChangeData=$event" :name="title" :age="age"></app-user-edit>
     </div>
   </div>
