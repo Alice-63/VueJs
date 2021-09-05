@@ -12,7 +12,7 @@
   </div>
 </template>
 <script>
-import {EventBus} from '../main'
+import {eventBus} from '../main'
 export default
 {
   data:function(){
@@ -38,15 +38,16 @@ export default
    VeriGonder:function(){
      this.$emit("yeni", this.child)
    },
-   created()
-   {
-     EventBus.$on("yeniYas",function(x){
+   
+   
+   
+  },
+  created(){
+    console.log("on calisti")
+     eventBus.$on("yas",(x)=>{
        this.age=x;
      })
    }
-   
-   
-  }
 }
 </script>
 

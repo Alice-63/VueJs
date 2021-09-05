@@ -8,7 +8,7 @@
   </div>
 </template>
 <script>
-import {EventBus} from '../main'
+import {eventBus} from '../main'
 export default
 {
   props:{
@@ -17,8 +17,9 @@ export default
   methods:
   {
     yeniYas:function(){
-      // this.$emit("yas","30")
-      EventBus.$emit("yas","30")
+      console.log("Burda!")
+     this.age=30
+      eventBus.$emit("yas",this.age)
     }
   }
 }
