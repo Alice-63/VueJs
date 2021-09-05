@@ -2,6 +2,7 @@
   <div class="col-md-s6">
     <h3>Child Component 2</h3>
     <p>Ben User.vue isimli Parent Component'in içerisindeki bir diğer Child componentim</p>
+    <p>Kullanici adi: {{name}}</p>
   </div>
 </template>
 <script></script>

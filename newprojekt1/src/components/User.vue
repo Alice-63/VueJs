@@ -2,6 +2,8 @@
   <div class="container">
     <h1>Parent Component (User)</h1>
     <p>Burası parent component yani herşeyin import edildiği component :)</p>
+    <p>{{title}}</p>
+    <button @click="changeName()">Adimi Degistir</button>
     <hr>
     <div class="row">
       <app-user-detail></app-user-detail>
@@ -15,8 +17,20 @@
   export default {
     components : {
       appUserDetail : UserDetail,
-      appUserEdit : UserEdit,
-    }
+      appUserEdit : UserEdit
+    
+    },
+      data:function(){
+        return{
+          title:"Ali Cetin"
+        }
+      },
+      methods:
+      {
+       changeName:function(){
+         return this.title="Mustafa Cetin"
+       }
+      }
   }
 </script>
 
