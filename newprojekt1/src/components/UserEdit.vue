@@ -5,7 +5,15 @@
     <p>Kullanici adi: {{name}}</p>
   </div>
 </template>
-<script></script>
+<script>
+export default
+{
+  props:
+  {
+    name:String
+  }
+}
+</script>
 
 <style scoped>
   div {

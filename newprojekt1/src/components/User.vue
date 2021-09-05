@@ -2,12 +2,13 @@
   <div class="container">
     <h1>Parent Component (User)</h1>
     <p>Burası parent component yani herşeyin import edildiği component :)</p>
+    <input type="text" v-model="title">
     <p>{{title}}</p>
     <button @click="changeName()">Adimi Degistir</button>
     <hr>
     <div class="row">
       <app-user-detail></app-user-detail>
-      <app-user-edit></app-user-edit>
+      <app-user-edit :name="title"></app-user-edit>
     </div>
   </div>
 </template>
@@ -22,7 +23,7 @@
     },
       data:function(){
         return{
-          title:"Ali Cetin"
+          title:""
         }
       },
       methods:
